@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Input, ListGroup, ListGroupItem } from 'reactstrap';
+import { Input, ListGroup } from 'reactstrap';
 import './Style.css';
 
 import { getUsers } from '../api';
 
 const renderUserList = (userList) => {
   return userList.map((user) => (
-    <div class='container'>
+    <div className='userlist'>
       <p>{user.nombre} </p>
       <p>{user.perfil}</p>
       <p>Días planificados {user.dias_plani}</p>
@@ -45,9 +45,9 @@ const UserList = () => {
   }, []);
 
   return (
-    <ListGroup className='userlist'>
+    <ListGroup>
       <Input type='text' onChange={searchUser} />
-      <ListGroupItem>{renderUserList(userList)}</ListGroupItem>
+      {renderUserList(userList)}
     </ListGroup>
   );
 };

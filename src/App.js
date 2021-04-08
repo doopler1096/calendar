@@ -29,12 +29,7 @@ class App extends Component {
     events: [
       {
         start: moment().toDate(),
-        end: moment().add(1, 'day').toDate(),
-        title: 'turno programado',
-      },
-      {
-        start: moment().toDate(),
-        end: moment().add(3, 'day').toDate(),
+        end: moment().add(0, 'day').toDate(),
         title: 'turno programado',
       },
     ],
@@ -67,6 +62,7 @@ class App extends Component {
           resizable
           style={{ height: '100vh' }}
         />
+        <button color='primary'>Guardar</button>
         <UserList />
       </div>
     );

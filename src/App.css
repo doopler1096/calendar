@@ -1,4 +1,5 @@
 .Calendar {
-  text-align: center;
-  border: solid blue;
+  border-radius: 0.5%;
+  border: solid rgb(174, 211, 186);
+  padding: 15px;
 }

@@ -1,6 +1,9 @@
-.userlist {
-  background-color: aqua;
-  border: solid red;
-  width: 18%;
+.userlist,
+Input {
+  background-color: rgb(174, 211, 186);
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  width: 250px;
   font-size: medium;
+  text-align: center;
 }
